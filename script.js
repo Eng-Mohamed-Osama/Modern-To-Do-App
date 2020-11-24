@@ -293,15 +293,9 @@ function dayAndNight () {
 
         divBackground.setAttribute('src' , './imgs/zpgh0R.png');
         
-        //switching DarkMode on and off depends on the timeing of the day
+        outerLayer.style.color = "#138af1";
 
-        theBackGroundContainer.classList.remove('darkmoade');
-
-        taskInput.classList.remove('darkmode-border');
-
-        taskCounter.classList.remove('darkmode-color');
-
-        document.querySelector('.add-task').classList.remove('darkmode-color');
+        document.querySelector('.ml11 .line').style.backgroundColor = "#138af1";
 
         if(hoursOfTheDay >= 5 &&  hoursOfTheDay < 12){
 
@@ -312,8 +306,24 @@ function dayAndNight () {
             document.querySelector(".letters").innerHTML = 'Good Afternoon'
 
         }
+        //switching DarkMode on and off depends on the timeing of the day
+
+        theBackGroundContainer.classList.remove('darkmoade');
+
+        taskInput.classList.remove('darkmode-border');
+
+        taskCounter.classList.remove('darkmode-color');
+
+        document.querySelector('.add-task').classList.remove('darkmode-color');
+
 
     }else{
+
+        outerLayer.style.backgroundColor = "#23435b";
+
+        outerLayer.style.color = "#138af1";
+
+        document.querySelector('.ml11 .line').style.backgroundColor = "#138af1";
 
         divBackground.setAttribute('src','./imgs/unnamed.png');
 
@@ -329,7 +339,6 @@ function dayAndNight () {
         
         noTaskMessage.style.color = "#000";
 
-        outerLayer.style.backgroundColor = "#23435b";
 
         document.querySelector(".letters").innerHTML = 'Good Evening'
 
