@@ -321,9 +321,9 @@ function dayAndNight () {
 
         outerLayer.style.backgroundColor = "#23435b";
 
-        outerLayer.style.color = "#138af1";
+        outerLayer.style.color = "#000";
 
-        document.querySelector('.ml11 .line').style.backgroundColor = "#138af1";
+        document.querySelector('.ml11 .line').style.backgroundColor = "#000";
 
         divBackground.setAttribute('src','./imgs/unnamed.png');
 
